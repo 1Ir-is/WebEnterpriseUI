@@ -87,6 +87,28 @@ nav .navigation ul li a:hover{
     font-weight: 600;
 }
 
+#login a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+#login a.login-btn {
+  color: rgb(21, 21, 100);
+  border: 1px solid rgb(21, 21, 100);
+  transition: 0.3s ease;
+}
+
+#login a.login-btn:hover {
+  color: #fff;
+  background: rgb(21, 21, 100);
+}
+
 /* End Navigation */
 
 /* Home */
