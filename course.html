@@ -30,6 +30,11 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a class="active" href="course.html">Courses</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>      
+                        <section id="sign-in">
+                            <a class="login-btn" href="#">Sign In</a>
+                        </section>
+                    </li>
                 </ul>
                 <img id="menu-btn" src="images/menu.png" alt="">
             </div>
@@ -205,7 +210,6 @@
 
 
         <script>
-
             $('#menu-btn').click(function(){
                 $('nav .navigation ul').addClass('active');
             });
@@ -213,10 +217,8 @@
             $('#menu-close').click(function(){
                 $('nav .navigation ul').removeClass('active');
             });
-
-
-
         </script>
+
 
 
     </body>

@@ -9,7 +9,12 @@
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="login.css">
         <link rel="stylesheet" href="style.css">
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -17,7 +22,6 @@
     </head>
 
     <body>
-
         <!-- Navigation -->
 
         <nav>
@@ -27,67 +31,66 @@
                     <i id="menu-close" class="fas fa-times"></i>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="blog.html">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="course.html">Courses</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li>      
                         <section id="sign-in">
-                            <a class="login-btn" href="#">Sign In</a>
+                            <a class="login-btn" href="login.html">Sign In</a>
                         </section>
                     </li>
                 </ul>
+
                 <img id="menu-btn" src="images/menu.png" alt="">
+        
             </div>
+
         </nav>
+        
 
         <!-- End Navigation -->
 
-        <!-- Blog Home -->
-
-        <section id="about-home">
-            <h2>Blog</h2>
-        </section>
-
-        <section id="blog-container">
-            <div class="blogs">
-                <div class="post">
-                    <img src="images/b1.jpg" alt="">
-                    <h3>Learn Web Development In The Easiest Way</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto magni corrupti quis facilis nesciunt repellat ullam, ad, 
-                    obcaecati a ex, perferendis itaque dolorem harum sunt enim aut fugiat tempora?</p>
-                    <a href="post.html">Read More</a>
-                </div>
-                <div class="post">
-                    <img src="images/b2.jpg" alt="">
-                    <h3>Learn Web Development In The Easiest Way</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto magni corrupti quis facilis nesciunt repellat ullam, ad, 
-                    obcaecati a ex, perferendis itaque dolorem harum sunt enim aut fugiat tempora?</p>
-                    <a href="post.html">Read More</a>
+      
+    <div class="login-back">
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Request Form</h1>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Last Password">
+                    <textarea name="" id="" cols="30" rows="5">Tell us your problem?</textarea>
+                    <button>Request</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Sign In</h1>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <a href="#">Forget Your Password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Welcome Back!</h1>
+                        <p>Enter your personal details to use all of site features</p>
+                        <button class="hidden" id="login">Sign In</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Got Trouble!</h1>
+                        <p>Request to administrator to solve the problem</p>
+                        <button class="hidden" id="register">Request</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="cate">
-                <h2>Categories</h2>
-                <hr>
-                <a href="#">Web Development</a>
-                <hr>
-                <a href="#">Web Design</a>
-                <hr>
-                <a href="#">App Development</a>
-                <hr>
-                <a href="#">Frontend Web</a>
-                <hr>
-                <a href="#">Python Programming</a>
-                <hr>
-                <a href="#">Javascript Hack</a>
-                <hr>
-            </div>
-        </section>
-
-        <!-- End Blog Home -->
-
-        <!-- Footer -->
-        <footer>
+        </div>
+    </div>
+        
+         <!-- Footer -->
+         <footer>
             <div class="footer-col">
                 <h3>Top Products</h3>
                 <li>Manage Reputation</li>
@@ -137,19 +140,7 @@
             </div>
         </footer>
         <!-- End Footer -->
-
-        <script>
-            $('#menu-btn').click(function(){
-                $('nav .navigation ul').addClass('active');
-            });
-
-            $('#menu-close').click(function(){
-                $('nav .navigation ul').removeClass('active');
-            });
-        </script>
-
-
-
+        <script src="script.js"></script>
     </body>
 
 </html>
