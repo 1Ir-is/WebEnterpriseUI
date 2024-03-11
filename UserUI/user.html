@@ -9,11 +9,10 @@
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-        <link rel="stylesheet" href="course.css">
+        <link rel="stylesheet" href="user.css">
 
 
         <link rel="icon" type="image/x-icon" href="../images/education.png">
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -21,34 +20,44 @@
 
     <body>
 
-               <!-- Navigation -->
+        <!-- Navigation -->
 
-               <nav>
-                <img src="../images/logo.png" alt="">
-                <div class="navigation">
-                    <ul>
-                        <i id="menu-close" class="fas fa-times"></i>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a class="active" href="../CoursesUI/course.html">Courses</a></li>
-                        <li>      
-                            <section id="sign-in">
-                                <a class="login-btn" href="../LoginUI/login.html">Sign In</a>
-                            </section>
-                        </li>
-                    </ul>
-                    <img id="menu-btn" src="../images/menu.png" alt="">
-                </div>
-            </nav>
-    
-            <!-- End Navigation -->
+        <nav>
+            <img src="../images/logo.png" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="menu-close" class="fas fa-times"></i>
+                    <li><a class="active" href="../index.html">Home</a></li>
+                    <li><a href="../CoursesUI/course.html">Courses</a></li>
+                    <li class="user-profile">      
+                        <div class="user-info">
+                            <span class="user-greeting">Hello, User</span>
+                            <img class="user-avatar" src="../AdminUI/assets/img/avatar/avatar-1.png" alt="User Avatar">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
 
-        <!-- About Home -->
+                            <hr>
+                            <a style="color: red;" class="" href="../LoginUI/logout.html"><i class="fas fa-sign-out-alt" style="color: red;"></i>Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <img id="menu-btn" src="../images/menu.png" alt="">
+            </div>
+        </nav>
+        <!-- End Navigation -->
 
-        <section id="course-home">
-            <h2>Courses</h2>
-        
+        <!-- Home -->
+
+        <section id="home">
+            <h2>Enhance Your Future</h2>
+            <p>Explore the vibrant stories and talents within our university community! Contribute your unique perspective 
+            by submitting articles and captivating images for the annual magazine.</p>
         </section>
 
+        <!-- End Home -->
+
+        <!-- Courses -->
 
         <section id="course">
             <h1>Our Popular Courses</h1>
@@ -154,7 +163,41 @@
 
             </div>
         </section>
-        <!-- End About Home -->
+
+        <!-- End Courses -->
+
+        <!-- Registration -->
+        <section id="registration">
+            <div class="reminder">
+                <p>Wisdom is not a product from school</p>
+                <h1>But a lifelong learning process</h1>
+                <div class="time">
+                    <div class="date">
+                        18 <br> Days
+                    </div>
+                    <div class="date">
+                        23 <br> Hours
+                    </div>
+                    <div class="date">
+                        06 <br> Mins
+                    </div>
+                    <div class="date">
+                        58 <br> Secs
+                    </div>
+                </div>
+            </div>
+        
+            <div class="form">
+                <h3>Search Courses</h3>
+                <input type="text" placeholder="Course Name" name="" id="">
+                <input type="text" placeholder="Topic" name="" id="">
+                <input type="text" placeholder="Instructor" name="" id="">
+                <div class="btn">
+                    <a href="#" class="yellow">Search</a>
+                </div>
+            </div>
+        </section>
+        <!-- End Registration -->
 
         <!-- Footer -->
         <footer>
@@ -181,9 +224,9 @@
             </div>
             <div class="footer-col">
                 <h3>Information</h3>
-                <li><a href="../AboutUI/about.html">About Us</a></li>
-                <li><a href="../BlogUI/blog.html">Blog</a></li>
-                <li><a href="../ContactUI/contact.html">Contact Us</a></li>
+                <li><a href="AboutUI/about.html">About Us</a></li>
+                <li><a href="BlogUI/blog.html">Blog</a></li>
+                <li><a href="ContactUI/contact.html">Contact Us</a></li>
                 <li>Marketing</li>
             </div>
 
@@ -208,6 +251,7 @@
         </footer>
         <!-- End Footer -->
 
+        <script src="../UserUI/user.js"></script>
 
         <script>
             $('#menu-btn').click(function(){
@@ -218,8 +262,6 @@
                 $('nav .navigation ul').removeClass('active');
             });
         </script>
-
-
 
     </body>
 
