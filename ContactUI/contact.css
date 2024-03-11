@@ -141,7 +141,20 @@ footer li{
   cursor: pointer;
 }
 
+footer li a{
+  text-decoration: none;
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 footer li:hover{
+  color: rgb(241, 240, 245);
+}
+
+footer li a:hover{
   color: rgb(241, 240, 245);
 }
 
