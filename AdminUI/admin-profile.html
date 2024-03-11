@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Create account &mdash; AMaz</title>
+  <title>Profile &mdash; AMaz</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -150,6 +150,7 @@
             </li>
           </ul>
       </nav>
+      
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
@@ -161,13 +162,13 @@
           <ul class="sidebar-menu">
                  
             <li class="menu-header">Functions</li>
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Auth</span></a>
               <ul class="dropdown-menu">
-                <li><a href="admin-reset-password.html">Reset Password</a></li> 
+                <li ><a href="admin-reset-password.html">Reset Password</a></li> 
               </ul>
               <ul class="dropdown-menu">
-                <li class=active><a class="nav-link beep beep-sidebar" href="admin-create-account.html">Create Account</a></li> 
+                <li><a href="admin-create-account.html">Create Account</a></li> 
               </ul>
             </li>
             <li class="dropdown">
@@ -178,93 +179,72 @@
                 <li><a href="">Create Academic Year</a></li> 
               </ul>
             </li> 
-          </ul> 
+          </ul>    
         </aside>
       </div>
 
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
-            <div class="section-header">
-                <h1>Create Account</h1>
-                <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="#">Functions</a></div>
-                    <div class="breadcrumb-item"><a href="#">Auth</a></div>
-                    <div class="breadcrumb-item">Create Account</div>
-                </div>
-            </div>
+          <div class="section-header">
+            <h1>Profile</h1>
+          </div>
+          <div class="section-body">
+            <h2 class="section-title">Hi, Minh Huy!</h2>
+            <p class="section-lead">
+              Change information about yourself on this page.
+            </p>
 
-            <div class="row">
-              <div class="col-12">
+            <div class="row mt-sm-4">
+              
+              <div class="col-12 col-md-12 col-lg-7">
                 <div class="card">
-                  <div class="card-header">
-                    <h4>Create New User</h4>
-                  </div>
-                  <div class="card-body">               
-                    <form class="wizard-content mt-2">
-                      <div class="wizard-pane">
-                        <div class="form-group row align-items-center">
-                          <label class="col-md-4 text-md-right text-left">Name</label>
-                          <div class="col-lg-4 col-md-6">
-                            <input type="text" name="name" class="form-control">
+                  <form method="post" class="needs-validation" novalidate="">
+                    <div class="card-header">
+                      <h4>Edit Profile</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">                               
+                          <div class="form-group col-md-6 col-12">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" value="" required="">
+                            <div class="invalid-feedback">
+                              Please fill in the first name
+                            </div>
                           </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                          <label class="col-md-4 text-md-right text-left">Email</label>
-                          <div class="col-lg-4 col-md-6">
-                            <input type="email" name="email" class="form-control">
-                          </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                          <label class="col-md-4 text-md-right text-left">Password</label>
-                          <div class="col-lg-4 col-md-6">
-                            <input type="password" name="password" class="form-control">
-                          </div>
-                        </div>
-
-                        <div class="form-group row">
-                          <label class="col-md-4 text-md-right text-left mt-2">Role</label>
-                          <div class="col-lg-4 col-md-6">
-                            <div class="selectgroup w-100">
-                              <label class="selectgroup-item">
-                                <input type="radio" name="value" value="developer" class="selectgroup-input">
-                                <span class="selectgroup-button">Manager</span>
-                              </label>
-                              <label class="selectgroup-item">
-                                <input type="radio" name="value" value="ceo" class="selectgroup-input">
-                                <span class="selectgroup-button">Coordinator</span>
-                              </label>
-                              <label class="selectgroup-item">
-                                <input type="radio" name="value" value="ceo" class="selectgroup-input">
-                                <span class="selectgroup-button">Student</span>
-                              </label>
+                          <div class="form-group col-md-6 col-12">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" value="Minh Huy" required="">
+                            <div class="invalid-feedback">
+                              Please fill in the last name
                             </div>
                           </div>
                         </div>
-                        <div class="form-group row">
-                          <div class="col-md-4"></div>
-                          <div class="col-lg-4 col-md-6">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" name="agree" class="custom-control-input" id="agree">
-                              <label class="custom-control-label" for="agree">I agree with the terms and conditions</label>
+                        <div class="row">
+                          <div class="form-group col-md-7 col-12">
+                            <label>Email</label>
+                            <input type="email" class="form-control" value="huy@gmail.com" required="">
+                            <div class="invalid-feedback">
+                              Please fill in the email
                             </div>
                           </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-md-4"></div>
-                          <div class="col-lg-4 col-md-6 text-right">
-                            <a href="#" class="btn btn-icon icon-right btn-primary">Create</i></a>
+                          <div class="form-group col-md-5 col-12">
+                            <label>Phone</label>
+                            <input type="tel" class="form-control" value="0914048099">
                           </div>
                         </div>
-                      </div>
-                    </form>
-                  </div>
+                    </div>
+                    <div class="card-footer text-right">
+                      <button class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
+
       <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
