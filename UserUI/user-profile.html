@@ -59,66 +59,69 @@
 
           <!-- Main Content -->
           <br><br><br>
-      <div class="main-content">
-        <section class="section">
-          <div class="section-header">
-            <h1>Profile</h1>
-          </div>
-          <div class="section-body">
-            <h2 class="section-title">Hi, Minh Huy!</h2>
-            <p class="section-lead">
-              Change information about yourself on this page.
-            </p>
-
-            <div class="row mt-sm-4">
-              
-              <div class="col-12 col-md-12 col-lg-7">
-                <div class="card">
-                  <form method="post" class="needs-validation" novalidate="">
-                    <div class="card-header">
-                      <h4>Edit Profile</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">                               
-                          <div class="form-group col-md-6 col-12">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" value="" required="">
-                            <div class="invalid-feedback">
-                              Please fill in the first name
-                            </div>
-                          </div>
-                          <div class="form-group col-md-6 col-12">
-                            <label>Last Name</label>
-                            <input type="text" class="form-control" value="Minh Huy" required="">
-                            <div class="invalid-feedback">
-                              Please fill in the last name
-                            </div>
-                          </div>
+          <div class="main-content">
+            <section class="section">
+              <div class="section-header">
+                <h1>Profile</h1>
+              </div>
+              <div class="section-body">
+                <h2 class="section-title">Hi, Minh Huy!</h2>
+                <p class="section-lead">
+                  Change information about yourself on this page.
+                </p>
+    
+                <div class="row mt-sm-4">
+                  
+                  <div class="col-12 col-md-12 col-lg-7">
+                    <div class="card">
+                      <form action="#" class="needs-validation-profile">
+                        <div class="card-header">
+                          <h4>Edit Profile</h4>
                         </div>
-                        <div class="row">
-                          <div class="form-group col-md-7 col-12">
-                            <label>Email</label>
-                            <input type="email" class="form-control" value="huy@gmail.com" required="">
-                            <div class="invalid-feedback">
-                              Please fill in the email
+                        <div class="card-body">
+                            <div class="row">                               
+                              <div class="form-group col-md-6 col-12">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" value="" required="">
+                                <div class="invalid-feedback">
+                                  Please fill in the first name
+                                </div>
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" value="" required="">
+                                <div class="invalid-feedback">
+                                  Please fill in the last name
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="form-group col-md-5 col-12">
-                            <label>Phone</label>
-                            <input type="tel" class="form-control" value="0914048099">
-                          </div>
+                            <div class="row">
+                              <div class="form-group col-md-7 col-12">
+                                <label>Email</label>
+                                <input type="email" class="form-control" value="" required="">
+                                <div class="invalid-feedback">
+                                  Please fill in the email
+                                </div>
+                              </div>
+                              <div class="form-group col-md-5 col-12">
+                                <label>Phone</label>
+                                <input type="tel" class="form-control" value="" required="">
+                                <div class="invalid-feedback">
+                                  Please fill in the phone number
+                                </div>
+                              </div>
+                            </div>
                         </div>
+                        <div class="card-footer text-right">
+                          <button class="btn btn-primary" id="swal-4">Save Changes</button>
+                        </div>
+                      </form>
                     </div>
-                    <div class="card-footer text-right">
-                      <button class="btn btn-primary">Save Changes</button>
-                    </div>
-                  </form>
+                  </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
-        </section>
-      </div>
 
         <!-- Footer -->
         <footer style="display: flex; ">
@@ -172,7 +175,11 @@
         </footer>
         <!-- End Footer -->
 
-        <script src="../UserUI/user.js"></script>
+          <!-- JS Libraies -->
+  <script src="../AdminUI/assets/modules/sweetalert/sweetalert.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="../AdminUI/assets/js/page/modules-sweetalert.js"></script>
 
         <script>
             $('#menu-btn').click(function(){
