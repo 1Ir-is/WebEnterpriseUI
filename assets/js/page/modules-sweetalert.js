@@ -164,4 +164,16 @@ $("#swal-6").click(function (event) {
   }
 });
 
+$(document).ready(function() {
+  $("#homeworkForm").submit(function(event) {
+      // Check if the checkbox is checked
+      if (!$("#agree").prop("checked")) {
+          // Prevent the default form submission
+          event.preventDefault();
+          // Display SweetAlert warning
+          swal('Warning', 'You have not checked the box to agree to terms and conditions!', 'warning');
+      }
+  });
+});
+
 

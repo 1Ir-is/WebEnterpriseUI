@@ -80,7 +80,7 @@
                                     <h4>Homework Submission Form</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form action="#" method="post" enctype="multipart/form-data">
+                                    <form action="ArticleDetailPage.html" id="homeworkForm">
                                         <div class="form-group">
                                             <label for="title">Homework Title</label>
                                             <input type="text" class="form-control" id="title" name="title" required>
@@ -95,7 +95,18 @@
                                             <input type="file" class="form-control" id="files" name="files" multiple
                                                 required>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Submit Homework</button>
+
+                                        <div class="form-group">
+                                            <div class="col-md-4"></div>
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agree" class="custom-control-input" id="agree">
+                                                    <label for="agree" class="custom-control-label">I agree with the <a href="">Terms and Conditions</a></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn btn-primary" id="swal-5" type="submit">Submit</button>
                                     </form>
                                     
                                 </div>
@@ -181,9 +192,11 @@
   
   <!-- JS Libraies -->
   <script src="../assets/modules/dropzonejs/min/dropzone.min.js"></script>
+  <script src="../assets/modules/sweetalert/sweetalert.min.js"></script>
 
   <!-- Page Specific JS File -->
   <script src="../assets/js/page/components-multiple-upload.js"></script>
+  <script src="../assets/js/page/modules-sweetalert.js"></script>
   
   <!-- Template JS File -->
   <script src="../assets/js/scripts.js"></script>
